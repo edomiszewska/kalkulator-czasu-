@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator dni do egzaminów</title>
+    <style>
+        .hidden{
+            display: none;
+
+        }
+    </style>
+</head>
+<body>
+    
+<header><h1>Kalkulator dni do egzaminów</h1></header>
+
+<main>
+    <label for="wydarzenie">Wydarzenie:</label> <br> 
+    <select name="wydar" id="wydarz">
+        <option value="">Wybierz z listy</option>
+        <option value="2025-01-13">Egzamin INF.03 pisemny</option>
+        <option value="2025-01-14">Egzamin INF.03 praktyczny</option>
+        <option value="2025-05-05">Matura pisemna j.polski</option>
+        <option value="2025-05-06">Matura pisemna matematyka</option>
+        <option value="2025-05-07">Matura pisemna j.obcy</option>
+    </select>
+    <br>
+
+    <label for="kalendarz">Wybierz datę:</label> <br>
+    <input type="date" id="kalendarz" class="hidden">
+    <br>
+
+    <button id="dni">Sprawdź dni do egzaminu</button>
+    <p id="wynik"></p>
+
+    <button id="kalen">wyświetl kalendarz</button>
+    
+</main>
+
+<footer>
+    &COPY; ME 
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
