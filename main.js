@@ -3,7 +3,7 @@ const kalendarz = document.querySelector('#kalendarz');
 const wydarzenie = document.querySelector('#wydarz');
 const wynik = document.querySelector('#wynik');
 const kalen= document.querySelector('#kalen');
-const cos=1;
+
 
 przyciskdni.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -27,7 +27,7 @@ kalen.addEventListener('click',(evt)=>
         kalen.innerHTML = "Ukryj kalendarz";
     } else {
         kalen.innerHTML = "wyświetl kalendarz";
-        tablica.innerHTML=" "
+        
     }
 
 
