@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+
+</head>
+<body>
+    
+<header><h1>Kalkulator dni do egzaminów</h1></header>
+
+<main>
+<label for="wydarzenie"></label>Wydarzenie: <br> 
+    <select name="wydar" id="wydarz" >
+<option value="wybierz">wybierz z listy </option>
+<option value="2025-01-13">Egzamin INF.03 pisemny </option>
+<option value="2025-01-14">Egzamin INF.03 praktyczny </option>
+<option value="2025-05-05">Matura pisemna j.polski </option>
+<option value="2025-05-06">Matura pisemna matematyka </option>
+<option value="2025-05-07">Matura pisemna j.obcy </option>
+
+    </select>
+</label><br>
+
+<label for="kalendarz">Wybierz datę: <br>
+    <input type="date">
+</label><br>
+
+<button id="dni">dni od dziś</button>
+<button id="ukryj">ukryj kalendarz</button>
+
+
+</main>
+
+
+
+<footer>
+&COPY ME 
+</footer>
+
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+const przyciskdni=document.querySelector('#dni')
+const przyciskukryj=document.querySelector('#ukryj')
+
+
+przyciskdni.addEventListener('click',(evt)=>
+{
+evt.preventDefault()
+const dzisdata=new Date();
+const wydarzenie=document.querySelector('#wydarz')
+
+
+}
+
+)
+
+
+
+
+
+
+
+
+
